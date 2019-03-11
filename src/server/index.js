@@ -1,7 +1,7 @@
 import Axios from "axios";
 
 let oneLeve=Axios.create({
-    baseURL: 'https://www.easy-mock.com/mock/5bc30fc6b0bf35423bd75347/list/',
+    baseURL: 'https://www.easy-mock.com/mock/5b9f01fe604c113bd0ceb9a2/mocklist/',
     headers : {
         'content-type' : 'application/x-www-form-urlencoded',
         'custom-header' : 'Banzer'
@@ -15,5 +15,5 @@ let oneLeve=Axios.create({
 })
 
 export const getDataList=()=>{
-    return oneLeve.post('listData');
+    return oneLeve.post('getDate');
 }

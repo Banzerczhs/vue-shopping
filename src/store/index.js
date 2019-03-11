@@ -17,7 +17,7 @@ let store=new Vuex.Store({
         async addDatalist(context){
             let {data}=await getDataList();
             
-            let {data:{list}}=JSON.parse(data);
+            let {data:list}=JSON.parse(data);
             context.commit('getProductList',list);
         },
         addCodeList(context){
